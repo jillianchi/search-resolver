@@ -2,15 +2,17 @@
 
 Forked from vtex.search-resolver@1.71.0. Main changes: Add CHEAPEST_AVAILABLE logic to ItemsFilterEnum in node/resolvers/search/product.ts
 
+
 BEFORE
 node/resolvers/search/product.ts
 
+```typescript
 enum ItemsFilterEnum {
  ALL = 'ALL',
  FIRST_AVAILABLE = 'FIRST_AVAILABLE',
  ALL_AVAILABLE = 'ALL_AVAILABLE',
 }
-....
+...
 export const resolvers = {
  Product: {
    ...
@@ -36,11 +38,13 @@ export const resolvers = {
    },
    ...
 }
+```
 
 
 AFTER
 node/resolvers/search/product.ts
 
+```typescript
 enum ItemsFilterEnum {
  ALL = 'ALL',
  FIRST_AVAILABLE = 'FIRST_AVAILABLE',
@@ -104,3 +108,4 @@ export const resolvers = {
     },
    ...
 }
+```
